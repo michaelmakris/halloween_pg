@@ -1,0 +1,30 @@
+{% load static %}
+{% load staticfiles %}
+
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'mainpage/css/button.css' %}">
+  </head>
+<body>
+
+<audio id="sound1" src="{% static 'mainpage/css/sounds/witches_house.mp3' %}" preload="auto">
+
+</audio>
+<a href="home">
+<button onclick="document.getElementById('sound1').play();" style="--content: 'Welcome!!';">
+
+  <div class="left"></div>
+    Welcome!!
+  <div class="right"></div>
+
+</button>
+
+<!--
+<embed src="{% static 'mainpage/css/sounds/witches_house.mp3' %}" loop="true" autostart="true" width="2"
+ height="0">
+-->
+
+</body>
+
+</html>
